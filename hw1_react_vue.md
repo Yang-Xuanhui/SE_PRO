@@ -47,6 +47,7 @@ Divide the whole app into small, self-contained, and often reusable components t
 * integrate third-party CSS animation libraries, such as Animate.css
 * use JavaScript to directly manipulate the DOM during transition hooks
 * integrate third-party JavaScript animation libraries, such as Velocity.js
+## Pros & Cons
 
 ## Referance
 https://en.wikipedia.org/wiki/React.js
