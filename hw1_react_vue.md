@@ -14,9 +14,6 @@ States hold values throughout the component and can be passed to child component
 ### Virtual DOM
 Use "virtual Document Object Model", or "virtual DOM". React creates an in-memory data structure cache, computes the resulting differences, and then updates the browser's displayed DOM efficiently.This allows the programmer to write code as if the entire page is rendered on each change, while the React libraries only render sub components that actually change.
 
-### Lifecycle methods
-Lifecycle methods are hooks which allow execution of code at set points during the component's lifetime.
-
 ### JSX
 Use JSX with React to describe what the UI should look like. It looks like a bunch of HTML mixed with JavaScript.React doesn’t require using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code.
 
@@ -46,8 +43,10 @@ Divide the whole app into small, self-contained, and often reusable components t
 * automatically apply classes for CSS transitions and animations
 * integrate third-party CSS animation libraries, such as Animate.css
 * use JavaScript to directly manipulate the DOM during transition hooks
-* integrate third-party JavaScript animation libraries, such as Velocity.js
-## Pros & Cons
+* integrate thir
+## Compare between React & Vue
+
+## Pros & Cons of Virtual DOM
 
 ## Referance
 https://en.wikipedia.org/wiki/React.js
@@ -59,3 +58,7 @@ https://reactjs.org/
 https://en.wikipedia.org/wiki/Vue.js
 
 https://cn.vuejs.org/
+
+[浅谈Virtual DOM] https://blog.csdn.net/lm278858445/article/details/80181927
+
+https://baijiahao.baidu.com/s?id=1608099200125495014&wfr=spider&for=pc
