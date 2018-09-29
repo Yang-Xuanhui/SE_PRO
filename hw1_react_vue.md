@@ -45,9 +45,26 @@ Divide the whole app into small, self-contained, and often reusable components t
 * use JavaScript to directly manipulate the DOM during transition hooks
 * integrate thir
 ## Compare between React & Vue
+* **React**
+    * Professional and excellent community，support to solve any problem
+    * Lightweight and easy to version migration
+* **Vue**
+    * Rich HTML templates, easy to develop
+    * Smaller, faster, more flexible and easier to learn than React
+
 
 ## Pros & Cons of Virtual DOM
-
+* **Pros**
+    * DOM centralization operation
+    
+      *When the data changes, the virtual DOM is modified first, and then reflected in the real DOM. The DOM is updated with the minimum cost to improve efficiency*
+      
+      ![picture 1](https://img-blog.csdn.net/20180503162030471?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xtMjc4ODU4NDQ1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+      
+    * Increased maintainability
+    * Opens the door to functional UI programming
+* **Cons**
+    * Sacrificing the partial performance
 ## Referance
 https://en.wikipedia.org/wiki/React.js
 
@@ -59,6 +76,6 @@ https://en.wikipedia.org/wiki/Vue.js
 
 https://cn.vuejs.org/
 
-[浅谈Virtual DOM] https://blog.csdn.net/lm278858445/article/details/80181927
+[浅谈Virtual DOM](https://blog.csdn.net/lm278858445/article/details/80181927)
 
 https://baijiahao.baidu.com/s?id=1608099200125495014&wfr=spider&for=pc
