@@ -59,7 +59,12 @@ Divide the whole app into small, self-contained, and often reusable components t
     
       *When the data changes, the virtual DOM is modified first, and then reflected in the real DOM. The DOM is updated with the minimum cost to improve efficiency*
       
-      ![picture 1](https://img-blog.csdn.net/20180503162030471?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xtMjc4ODU4NDQ1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+      *Basic flow of browser rendering pages*
+      ![Basic flow of browser rendering pages](https://raw.githubusercontent.com/Yang-Xuanhui/SE_PRO/master/DOM.png)
+      
+      *Basic principle of virtual DOM*
+      ![Basic principle of virtual DOM](https://raw.githubusercontent.com/Yang-Xuanhui/SE_PRO/master/DOM-Virtual.png)
+      
       
     * Increased maintainability
     * Opens the door to functional UI programming
