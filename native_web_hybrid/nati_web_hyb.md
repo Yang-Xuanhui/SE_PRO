@@ -1,6 +1,6 @@
 # **Comparation between Native app, Web app and Hybrid app**
 
-![relationship of native, web and hybrid apps] (./relationship.png "relationship")
+![relationship of native, web and hybrid apps](https://github.com/Yang-Xuanhui/SE_PRO/blob/master/native_web_hybrid/relationship.png "relationship")
 
 ## **NATIVE**
 
@@ -20,7 +20,7 @@ News APP and video APP generally adopt Native framework and Web content.
 
 ## **Pros & Cons**
 
-![compare] (./compare.png "compare")
+![compare](https://github.com/Yang-Xuanhui/SE_PRO/blob/master/native_web_hybrid/compare.png "compare")
 * Native
   
   + Advantages:
@@ -33,13 +33,13 @@ News APP and video APP generally adopt Native framework and Web content.
   
     1. High development costs.
 
-       Each mobile operating system needs independent development projects to provide different experiences for different platforms.
+       *Each mobile operating system needs independent development projects to provide different experiences for different platforms.*
     2. Slow release of new releases.
     
-       Downloads are user controlled, and many users don't want to download updates (for example, there are still many 1.0 users and you may have to maintain the 1.0 API).
+       *Downloads are user controlled, and many users don't want to download updates (for example, there are still many 1.0 users and you may have to maintain the 1.0 API).*
     3. App store release review cycle is long.
     
-       Android takes between one and three days, while iOS takes longer
+       *Android takes between one and three days, while iOS takes longer.*
 * Web
   
    + Advantages:
@@ -52,7 +52,7 @@ News APP and video APP generally adopt Native framework and Web content.
 
         1. The page jumps arduous, unsteady sense is stronger.
    
-           When the speed of the network is limited, there are many times when the card or card dead phenomenon, interaction effect is limited
+           *When the speed of the network is limited, there are many times when the card or card dead phenomenon, interaction effect is limited*
         2. Security is relatively low and data can be easily compromised or hijacked
 * Hybrid
   
