@@ -2,10 +2,10 @@ import java.io.*;
 import java.util.Vector;
 
 public class Dict {
-    //字典类，包含所有合法单词
+    //contains all valid words
     Vector<String> dictionary = new Vector();
     public Dict(String path){
-        //读文件
+        //read file
         try{
             FileReader reader = new FileReader(path);
             BufferedReader br = new BufferedReader(reader);
@@ -13,14 +13,19 @@ public class Dict {
             while ((word = br.readLine()) != null){
                 dictionary.addElement(word);
             }
-            System.out.println(dictionary.capacity());
         } catch (IOException e){
-            //异常输出
-            e.printStackTrace();
+            System.out.println("Error: Can't get the dictionary with the given path.");
+            //e.printStackTrace();
         }
     }
-    //检查单词是否在字典中
+    //check whether the word is valid
     boolean inDict(String word){
         return dictionary.contains(word);
+    }
+    boolean isEmpty(){
+        if(dictionary.size()==0){
+            return true;
+        }
+        else return false;
     }
 }
