@@ -27,10 +27,6 @@ public class Dict {
             //e.printStackTrace();
         }
     }
-
-    public Vector<String> getDictionary(){
-        return dictionary;
-    }
     //check whether the word is valid
     boolean inDict(String word){
         return dictionary.contains(word);
