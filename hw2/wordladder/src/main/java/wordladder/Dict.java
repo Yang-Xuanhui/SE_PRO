@@ -2,8 +2,6 @@ package wordladder;
 
 import java.io.*;
 
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.Resource;
 import org.springframework.util.ResourceUtils;
 
 import java.util.Vector;
@@ -14,6 +12,7 @@ public class Dict {
     public Dict(){
         //read file
         try {
+            // change path to read different dictionary
             File file= ResourceUtils.getFile("classpath:dictionary/smalldict1.txt");
             InputStreamReader in = new InputStreamReader(new FileInputStream(file),"UTF-8");
             BufferedReader reader = new BufferedReader(in);

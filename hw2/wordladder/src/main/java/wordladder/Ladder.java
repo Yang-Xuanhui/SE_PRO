@@ -90,6 +90,7 @@ public class Ladder {
         }
     }
 
+    // turn result into string
     String parseLadder(Dict dict){
         Stack<String> ladders = new Stack();
         ladders = getLadder(dict);
