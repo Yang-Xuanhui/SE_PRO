@@ -4,8 +4,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 /**
- * Created by lightClouds917
- * Date 2018/2/2
  * Description:打包测试
  */
 //@Ignore("not ready yet")
