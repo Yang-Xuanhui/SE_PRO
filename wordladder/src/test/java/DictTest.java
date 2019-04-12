@@ -1,6 +1,7 @@
 import junit.framework.TestCase;
 
 public class DictTest extends TestCase {
+
     public void testInDict() {
         String word = "code";
         String none = "abcd";
