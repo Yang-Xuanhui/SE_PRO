@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LadderController {
 
-    @RequestMapping("/ladder")
+    @RequestMapping("/get_wordladder")
     public Ladder ladder(@RequestParam(value="begin", defaultValue="code") String begin,@RequestParam(value="end", defaultValue="data") String end) {
         Dict dict = new Dict();
         return new Ladder(begin,end,dict);
