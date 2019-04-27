@@ -38,17 +38,17 @@ Download [Docker Toolbox](https://github.com/docker/toolbox/releases) from githu
 
 > The terminal does several things to set up Docker Toolbox for you. When it is done, the terminal displays the $ prompt.
 
-![img](./img/start.jpg)
+![img](./img/start.JPG)
 
 成功打开 terminal
 
-![img](./img/success.jpg)
+![img](./img/success.JPG)
 
 ## 登录
 
 ```docker login```
 
-![img](./img/login.jpg)
+![img](./img/login.JPG)
 
 ## 构建容器镜像 (container image) 并将其推送到Docker Hub
 
@@ -59,11 +59,11 @@ Download [Docker Toolbox](https://github.com/docker/toolbox/releases) from githu
 
    ```.``` 是指明Dockerfile就在当前路径下
 
-    ![img](./img/build.jpg)
+    ![img](./img/build.JPG)
 
     可以通过 ```docker images``` 查看
 
-    ![img](./img/images.jpg)
+    ![img](./img/images.JPG)
 
 2. 运行镜像
 
@@ -73,21 +73,21 @@ Download [Docker Toolbox](https://github.com/docker/toolbox/releases) from githu
 
     ```-d``` 表示在后台运行，    ```-p``` 端口映射，格式为：主机(宿主)端口:容器端口
 
-    ![img](./img/run.jpg)
+    ![img](./img/run.JPG)
 
 3. push 到 Docker Hub
 
     ```docker push yangxh99/wordladder```
 
-    ![img](./img/push.jpg)
+    ![img](./img/push.JPG)
 
-    ![img](./img/dockerhub.jpg)
+    ![img](./img/dockerhub.JPG)
 
 ## 从Docker Hub上把镜像pull到本地
 
 ```docker pull yangxh99/wordladder```
 
-![img](./img/pull.jpg)
+![img](./img/pull.JPG)
 
 ## Docker exec 命令
 
@@ -97,7 +97,7 @@ Download [Docker Toolbox](https://github.com/docker/toolbox/releases) from githu
 
 可以在运行的容器中执行命令
 
-![img](./img/exec.jpg)
+![img](./img/exec.JPG)
 
 ## 其他可能用到的指令
 
