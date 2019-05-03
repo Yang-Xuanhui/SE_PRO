@@ -2,7 +2,7 @@
 
 ## 将程序打包
 
-```mvn clear package```
+```mvn clean package```
 
 ![img](./img/jar.JPG)
 
