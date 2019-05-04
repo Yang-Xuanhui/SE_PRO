@@ -10,7 +10,7 @@ part b: wordladder
 
 login的端口为8082，wordladder的端口为8081
 
-通过 (http://168.192.99.100:8082/search) 可以间接的访问到wordladder的get_wordladder接口
+源码：分开的两个项目分别在login和wordladder目录下
 
 ## pull images from docker hub
 
@@ -32,3 +32,5 @@ run login with a link of word-ladder
 ```
 docker run -d -p 8082:8099 --link=ladder:ladder --name=withLogin yangxh99/login
 ```
+
+运行后通过 [http://192.168.99.100:8082/](http://192.168.99.100:8082/) 可以访问该服务，其中 /search 查找wordladder的功能通过login服务向word-ladder服务发送http请求获得结果，然后返回给用户。

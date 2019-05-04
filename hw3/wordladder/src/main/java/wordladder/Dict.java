@@ -12,11 +12,16 @@ public class Dict {
 
     public Dict() {
         //read file
+        InputStream stream = getClass().getClassLoader().getResourceAsStream("dictionary/smalldict1.txt") ;
+
         try {
             // change path to read different dictionary
+            /* 这种方法在打包后不能正常读到文件
             File file = ResourceUtils.getFile("classpath:dictionary/smalldict1.txt");
-            InputStreamReader in = new InputStreamReader(new FileInputStream(file), "UTF-8");
+            */
+            InputStreamReader in = new InputStreamReader(stream, "UTF-8");
             BufferedReader reader = new BufferedReader(in);
+
             String word;
             while ((word = reader.readLine()) != null) {
                 dictionary.addElement(word);
