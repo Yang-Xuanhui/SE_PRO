@@ -1,10 +1,11 @@
 package task4.container;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Container{
-    private static Container container= new Container(20,10,30L);
+    private static Container container= new Container(20,7,30L);
     private List<Request> list;
     private Integer size;
     private Integer capacity;
@@ -27,28 +28,38 @@ public class Container{
         /* Queue */
         if(size>0 && size<=threshold){
             Request req = list.get(0);
+            /* check timeout */
             if(isTimeout(req)){
                 removeReq();
             }
             if(size==0){
                 return null;
             }
-            Object obj = list.get(0).request;
+            req = list.get(0);
+            Object obj = req.request;
             list.remove(0);
             size--;
+            Long response = System.currentTimeMillis() - req.time;
+            System.out.println("response time: "+ response);
             return obj;
         }
         /* Stack */
-        else if(size > threshold){
+        else if(size >= threshold){
             Request req = list.get(size-1);
+            /* check timeout
+               if the last one is timeout, clear the container
+              */
             if(isTimeout(req)){
                 list.clear();
                 size = 0;
                 return null;
             }
-            Object obj = list.get(size-1).request;
+            req = list.get(size-1);
+            Object obj = req.request;
             list.remove(size-1);
             size--;
+            Long response = System.currentTimeMillis() - req.time;
+            System.out.println("response time: "+ response);
             return obj;
         }
         else{
@@ -75,10 +86,13 @@ public class Container{
     }
 
     private void removeReq(){
-        for(Request req : list){
+        Iterator<Request> iter = list.iterator();
+        while(iter.hasNext()){
+            Request req = iter.next();
             if(isTimeout(req)){
-                list.remove(req);
+                iter.remove();
                 size--;
+                System.out.println("Timeout: "+req.request);
             }
             else{
                 break;
